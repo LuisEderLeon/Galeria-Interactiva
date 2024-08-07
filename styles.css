@@ -1,0 +1,64 @@
+section#gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 2vw;
+    column-gap: 2vw;
+    transition: all 1s ease;
+}
+
+figure{
+    background-color: blue;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+    width: 23vw;
+    transition: all 1s ease;
+    h3{
+        background-color: rgb(0, 0, 180);
+        padding: 2vw 0px;
+        width: 100%;
+        margin-top: 0px;
+        font-size: 2vw;
+        transition: all 1s ease;
+    }
+    img{
+        width: 19vw;
+        margin: 2vw;
+        transition: all 1s ease;
+    }
+    nav{
+        background-color: green;
+        padding: 1vw 0px;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        transition: all 1s ease;
+    }
+    button{
+        font-size: 1.5vw;
+        background-color: rgb(110, 194, 0);
+        border: none;
+        border-radius: 2vw;
+        padding: 0.5vw;
+        transition: all 1s ease;
+    }
+    button:hover{
+        background-color: rgb(106, 255, 47);
+    }
+}
+figure.expand{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    img{
+        height: 70vh;
+        width: auto;
+        transition: all 1s ease;
+    }
+}
